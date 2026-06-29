@@ -348,7 +348,7 @@ export default function ReportsAnalytics() {
                           border: '1px solid hsl(220, 13%, 91%)',
                           borderRadius: '8px',
                         }}
-                        formatter={(value: number | undefined) => [value, 'Orders']}
+                        formatter={(value) => [value, 'Orders']}
                       />
                       <Line type="monotone" dataKey="orders" stroke="hsl(263, 70%, 50%)" strokeWidth={2} dot={{ fill: 'hsl(263, 70%, 50%)' }} />
                     </LineChart>
