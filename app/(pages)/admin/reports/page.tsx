@@ -378,7 +378,7 @@ export default function ReportsAnalytics() {
                           border: '1px solid hsl(220, 13%, 91%)',
                           borderRadius: '8px',
                         }}
-                        formatter={(value: number | undefined) => [`LKR ${value?.toLocaleString()}`, 'Revenue']}
+                        formatter={(value) => [`LKR ${(value as number | undefined)?.toLocaleString()}`, 'Revenue']}
                       />
                       <Bar dataKey="value" fill="hsl(215, 50%, 23%)" radius={[0, 4, 4, 0]} />
                     </BarChart>

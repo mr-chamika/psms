@@ -461,7 +461,7 @@ export default function EditorDashboard() {
                     borderRadius: '8px',
                     boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.07)',
                   }}
-                  formatter={(value: number | undefined) => [`${value} jobs`, '']}
+                  formatter={(value) => [`${value} jobs`, '']}
                 />
               </PieChart>
             </ResponsiveContainer>

@@ -59,7 +59,7 @@ export function RevenueChart({ data }: RevenueChartProps) {
                                 borderRadius: '8px',
                                 boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.07)',
                             }}
-                            formatter={(value: number | undefined) => [`LKR ${formatPrice(value ?? 0)}`, '']}
+                            formatter={(value) => [`LKR ${formatPrice((value as number) ?? 0)}`, '']}
                         />
                         <Legend
                             verticalAlign="top"
